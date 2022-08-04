@@ -186,7 +186,7 @@ a{
     display: flex;
     align-items: center;
 }
-@media (max-width:996px) {
+@media (max-width:767px) {
     .menu{
         flex-wrap: wrap;
     }
