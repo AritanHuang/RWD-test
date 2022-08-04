@@ -185,20 +185,27 @@ a{
 .menu{
     display: flex;
     align-items: center;
-    width: 25%;
-    justify-content: space-evenly;
 }
 @media (max-width:996px) {
     .menu{
-        width: 48%;
         flex-wrap: wrap;
     }
 }
-.menu li a{
+@media (max-width:767px) {
+    .menu li{
+        width: 48%;
+    }
+}
+.menu li a {
     display: block;
     border-bottom: 2px solid transparent;
 }
-.menu li :hover{
+@media (max-width:996px) {
+    .menu li a{
+        text-align: center;
+    }
+}
+.menu li a:hover{
     border-bottom: 2px solid #2fd5ac;
 }
 /* course 區塊樣式 */
@@ -271,7 +278,7 @@ a{
     padding-left: 12px;
 }
 .p-16{
-    padding: 16px 0;
+    padding: 16px;
 }
 .p-20{
     padding: 20px;
